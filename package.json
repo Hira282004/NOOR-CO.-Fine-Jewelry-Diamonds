@@ -1,16 +1,18 @@
 {
   "name": "e-comerse",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node backend/server.js"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "lucide-react": "^1.33.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
@@ -19,7 +21,9 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
-    "oxlint": "^1.75.0",
     "vite": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
